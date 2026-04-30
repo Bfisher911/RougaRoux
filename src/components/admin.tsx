@@ -1,0 +1,11 @@
+export const AdminSidebar = () => <aside className="space-y-2">{["Overview","Articles","AI Agent Control Center","Advertising","Advice Submissions","Events","Newsletter","Site Settings"].map(i=><div key={i} className="p-2 border rounded">{i}</div>)}</aside>;
+export const AgentStatusCard = ({ name }: { name: string }) => <div className="border rounded p-3"><h4>{name}</h4><p className="text-xs">Status: Active</p></div>;
+export const ArticleEditor = () => <div className="border rounded p-3">Article Editor</div>;
+export const EditorialCalendar = () => <div className="border rounded p-3">Editorial Calendar</div>;
+export const AdCampaignManager = () => <div className="border rounded p-3">Campaign Manager</div>;
+export const AgentRunLog = () => <div className="border rounded p-3">Agent Run Log</div>;
+export const SourceList = () => <div className="border rounded p-3">Source List + Confidence + Fact-check</div>;
+export const FactCheckPanel = () => <div className="border rounded p-3">Fact Check Panel</div>;
+export const PublishControls = () => <div className="border rounded p-3">Approve / Edit / Reject / Regenerate / Schedule</div>;
+export const ImagePromptPreview = () => <div className="border rounded p-3">Nano Banana prompt preview</div>;
+export const SponsoredDisclosureBadge = () => <span className="text-xs px-2 py-1 rounded bg-amber-200">Sponsored</span>;
