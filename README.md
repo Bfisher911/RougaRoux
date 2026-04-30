@@ -15,6 +15,9 @@ Production-ready MVP foundation for an AI-operated New Orleans digital magazine,
 - Supabase schema for content, ads, subscriptions, advice, tips, events, agents, settings
 - Seed data for categories/articles/packages
 - Human Review Mode default, controlled auto-publish policy documented in admin UI
+- Runtime health endpoint for monitoring: `GET /api/health`
+- Baseline security headers in Next.js config
+- CI workflow for lint/typecheck/build on push + pull request
 
 ## Local setup
 1. `cp .env.example .env.local`
@@ -39,3 +42,11 @@ Production-ready MVP foundation for an AI-operated New Orleans digital magazine,
 Use Supabase scheduled functions or external cron to hit:
 - `POST /api/agents/run?agent=research`
 - same endpoint for planner, writer, fact-checking, seo, newsletter, marketing, analytics, moderation.
+
+## Deployment readiness checklist
+- Configure all environment variables in `.env.example`.
+- Verify `GET /api/health` returns HTTP 200 in production.
+- Set up cron jobs for AI agents and newsletter jobs.
+- Connect Stripe webhook endpoint in Stripe dashboard.
+- Configure Supabase backups and RLS policies review cadence.
+- Add uptime monitor and alerting for `GET /api/health`.
