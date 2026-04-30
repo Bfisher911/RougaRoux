@@ -1,0 +1,2 @@
+import { AdvertisePackageCard, StripeCheckoutButton } from "@/components/cards";
+export default function Advertise(){return <div className="space-y-4"><h1 className="text-2xl font-bold">Advertise With Us</h1><div className="grid md:grid-cols-3 gap-3">{[["Small Sidebar Ad","$99/week"],["Medium In-Feed Ad","$249/month"],["Sponsored Local Spotlight","$799"]].map(([n,p])=><AdvertisePackageCard key={n} name={n} price={p}/>)}</div><StripeCheckoutButton/></div>}
