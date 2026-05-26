@@ -1,0 +1,4 @@
+url: https://www.lahistory.org/resources/dictionary-louisiana-biography/dictionary-louisiana-biography-d/
+fetched_utc: 2026-05-26T14:28:50Z
+
+curl: (6) Could not resolve host: www.lahistory.org
