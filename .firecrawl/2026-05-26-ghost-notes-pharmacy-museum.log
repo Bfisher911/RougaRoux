@@ -1,0 +1,19 @@
+# Firecrawl research log
+timestamp_utc: 2026-05-26T14:28:50Z
+topic: New Orleans Pharmacy Museum (Ghost Notes)
+
+## firecrawl_search_attempt
+command: curl https://api.firecrawl.dev/v1/search ...
+curl: (6) Could not resolve host: api.firecrawl.dev
+
+
+## official_source_fetches
+### url: https://pharmacymuseum.org/faq
+curl: (6) Could not resolve host: pharmacymuseum.org
+
+### url: https://pharmacymuseum.org/collection
+curl: (6) Could not resolve host: pharmacymuseum.org
+
+### url: https://www.lahistory.org/resources/dictionary-louisiana-biography/dictionary-louisiana-biography-d/
+curl: (6) Could not resolve host: www.lahistory.org
+
